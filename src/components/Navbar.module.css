@@ -1,16 +1,18 @@
 .navbar {
   width: 722px;
-  height: 39px;
-  max-width: 90vw; /* Responsive constraint */
+  height: 40px;
+  max-width: 90vw;
   margin: 30px auto 0 auto;
   border-radius: 50px;
-  /* Border position inside using box-shadow inset */
   box-shadow: inset 0 0 0 1px #333333;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 16px 24px;
-  background-color: transparent;
+  background-color: #000;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 50;
 }
 
 .logo {
@@ -21,9 +23,19 @@
 .logo a {
   font-family: var(--font-hanuman), serif;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.burgerBtn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
 .navLinks {
@@ -46,14 +58,33 @@
 
 /* Make it responsive for smaller screens */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 16px;
-    gap: 16px;
-    border-radius: 20px;
+  .burgerBtn {
+    display: flex;
   }
+
   .navLinks {
-    flex-wrap: wrap;
-    justify-content: center;
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 1px #333333;
+    flex-direction: column;
+    padding: 24px;
+    gap: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .navLinks a {
+    font-size: 16px;
+    width: 100%;
+    padding: 8px 0;
+  }
+
+  .navLinks.showMenu {
+    display: flex;
   }
 }
