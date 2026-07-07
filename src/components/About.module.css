@@ -85,4 +85,29 @@
   opacity: 0.8;
 }
 
+@media (max-width: 1100px) {
+  .contentWrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+  }
+  
+  .textContent {
+    max-width: 100%;
+  }
 
+  .imageContainer {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageContainer {
+    display: none;
+  }
+  
+  .heading {
+    font-size: 28px;
+  }
+}
