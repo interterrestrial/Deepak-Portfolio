@@ -1,0 +1,180 @@
+.experienceSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.container {
+  width: 1238px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.sectionTitle {
+  font-family: Verdana, sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.1;
+  background: radial-gradient(circle, #FFFFFF 0%, #999999 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.card {
+  background-color: transparent;
+  border-radius: 24px;
+  box-shadow: inset 0 0 0 1px #333333;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.companyInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.companyIcon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.companyName {
+  font-family: Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.cardMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.badge {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.102);
+  border: 1px solid #E5E7EB;
+  border-radius: 30px;
+  padding: 6px 16px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.metaIcon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  opacity: 0.5;
+}
+
+.rolesContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 24px;
+}
+
+.timeline {
+  position: absolute;
+  left: 31px;
+  top: 10px;
+  bottom: 10px;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.roleItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+}
+
+.timelineDot {
+  width: 5px;
+  height: 5px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin-top: 14px;
+  z-index: 2;
+  margin-left: 5px;
+}
+
+.roleContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.roleTitle {
+  font-family: var(--font-hanuman), serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.roleDuration {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.achievements {
+  margin: 10px 0 0 48px;
+  padding: 0;
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.achievements li {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #D1D5DB;
+  line-height: 1.5;
+}
+
+
