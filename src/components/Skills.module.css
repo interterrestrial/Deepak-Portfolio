@@ -96,3 +96,18 @@
   color: #e2e8f0;
 }
 
+@media (max-width: 768px) {
+  .contentWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .categoryTitle {
+    flex: 0 0 auto;
+  }
+  
+  .heading {
+    font-size: 40px;
+  }
+}
