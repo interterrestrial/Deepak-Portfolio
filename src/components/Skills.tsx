@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./Skills.module.css";
 import { 
-  Code2, AppWindow, Server, Database, BarChart3, Cloud, Settings, PenTool, Gamepad2, 
-  Box, Palette
+  Code2, AppWindow, Server, Database, BarChart3, Cloud, Settings, PenTool, Gamepad2
 } from "lucide-react";
+import {
+  SiFigma, SiUnrealengine, SiUnity, SiBlender,
+} from "react-icons/si";
 
 const skillsData = [
   {
@@ -93,7 +95,7 @@ const skillsData = [
     icon: <PenTool size={24} className={styles.categoryIcon} color="#F472B6" />,
     bgColor: "rgba(49, 13, 56, 0.6)", // dark magenta
     skills: [
-      { name: "Figma", icon: <Palette size={16} color="#F24E1E" /> },
+      { name: "Figma", icon: <SiFigma color="#F24E1E" size={16} /> },
     ]
   },
   {
@@ -101,9 +103,9 @@ const skillsData = [
     icon: <Gamepad2 size={24} className={styles.categoryIcon} color="#10B981" />,
     bgColor: "rgba(10, 48, 28, 0.6)", // another dark green
     skills: [
-      { name: "Unreal Engine", icon: <Gamepad2 size={16} color="#ffffff" /> },
-      { name: "Unity", icon: <Gamepad2 size={16} color="#ffffff" /> },
-      { name: "Blender", icon: <Box size={16} color="#F5792A" /> },
+      { name: "Unreal Engine", icon: <SiUnrealengine color="#FFFFFF" size={16} /> },
+      { name: "Unity", icon: <SiUnity color="#FFFFFF" size={16} /> },
+      { name: "Blender", icon: <SiBlender color="#F5792A" size={16} /> },
     ]
   }
 ];
